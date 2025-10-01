@@ -5,12 +5,6 @@ This project was the **final project for my Logic Design (CSE 100)** course. It 
 
 ---
 
-## 📹 Demo
-[![Watch the demo](images/demo_thumbnail.png)](https://youtu.be/your-demo-link)  
-*(Click to watch the game in action!)*
-
----
-
 ## ✨ Features
 - VGA controller generating **640x480 display** at 60Hz
 - Player character with **jump mechanic** controlled by power bar
@@ -28,10 +22,10 @@ This project was the **final project for my Logic Design (CSE 100)** course. It 
 ---
 
 ## ⚙️ Hardware & Tools
-- **Board:** Digilent Basys3 FPGA (Xilinx Artix-7)
+- **Board:** Digilent Basys3 FPGA
 - **Display:** VGA monitor (640x480)
 - **HDL:** Verilog (structural, using only `assign` and FDRE flip-flops)
-- **Toolchain:** Vivado [version]
+- **Toolchain:** Vivado 2023.2
 
 ---
 
@@ -40,8 +34,6 @@ This project was the **final project for my Logic Design (CSE 100)** course. It 
 
 ├── /test # Testbenches & simulation outputs
 
-├── /images # Diagrams, screenshots
-
 └── README.md # This file
 
 
@@ -49,16 +41,14 @@ This project was the **final project for my Logic Design (CSE 100)** course. It 
 
 ## 🚀 How to Run
 ### Prerequisites
-- Vivado [version]
+- Vivado 2023.2
 - Basys3 FPGA board
 - VGA monitor
 
 ### Build & Run
-Clone this repo:
-   ```bash
-   git clone https://github.com/your-username/watch-your-step-fpga.git
-   cd watch-your-step-fpga
-Open project in Vivado
+Create a project in Vivado
+
+Copy the source files (all Verilog files and the single Contraint file [.xdc])
 
 Generate bitstream and program FPGA
 
@@ -79,8 +69,6 @@ We were given starter modules/files to use in this project:
 labVGA_clks.v → Generates 25MHz VGA clock and digit select signal
 
 test_lab6_syncs.v → Testbench for VGA sync validation
-
-Ring Counter / Hex7Seg display logic (from earlier labs)
 
 ## 🧩 Lessons Learned
 
